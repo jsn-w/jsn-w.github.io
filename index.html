@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wei J</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-inner">
+            /jsn-w
+        </div>
+    </div>
+
+
+    <section class="about-me">
+        <div class="container section-row">
+            <div class="section-label">
+                <h1>/about</h1>
+            </div>
+
+            <div class="section-content about-grid">
+                <div class="profile-pic">
+                    <img src="assets/pfp.png" alt="Profile picture of Jason Wei">
+                </div>
+
+                <div class="about-text">
+                    <h2>hi!, I am Jason Wei</h2>
+                    <p>I enjoy building things that live between hardware and software. Most of my time goes into PCB design, embedded systems, and understanding how underlying mechanisms work. Right now, I'm experimenting with microcontrollers through small side projects.</p>
+                    <p>I am also <span id="rotating-text"></span></p>
+                    <p>from Brooklyn, NY  —  <span id="time"></span></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container section-row">
+            <div class="section-label">
+                <h1>/projects</h1>
+            </div>
+
+            <div class="section-content">
+
+                <div class="project-category">
+                    <h2 class="project-heading">CWRU Motorsports</h2>
+                    <p class="project-description">
+                        I joined our collegiate team for Baja SAE. During my freshmen year, I worked on the wiring harness and designed enclosures for different PCBs on the vehicle. This was the first time I learned how to solder small packages (0402). I still want to learn other methods of soldering SMT components. I also developed my manual machining skills, using mills and lathes, to machine several components for our vehicle.
+                    </p>
+                    <p class="project-description">
+                        During this upcoming school year, I am designing a valve control circuit, which controls the stiffness of the suspension shocks on the vehicle. I will be responsible for writing firmware to control the stiffness of the shocks based on driver input. This summer, I am also learning how to CAM parts for 3-axis CNC machining.
+
+                    </p>
+
+                    <div class="project-grid">
+                        <!-- <div class="project-card">
+                            <img src="assets/" alt="Autonomous Robot">
+                            <div class="project-overlay">
+                                <h3>Enclosures</h3>
+                                <p>
+                                    ddddd
+                                </p>
+                            </div>
+                        </div> -->
+
+                        <div class="project-card">
+                            <img src="assets/STM32_devboard_pcb.png" alt="STM32 PCB">
+                            <div class="project-overlay">
+                                <h3>STM32 Dev Board</h3>
+                                <p>
+                                    This was the first development board I made. This was STM32-based with CAN communication support and external LEDs
+                                    for debugging. I also Implemented supporting circuitry including power regulation, an external clock, and communication interfaces. This project really taught me the important component that a microncontroller needs to operate from the ground up.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="project-card">
+                            <img src="assets/" alt="CAM">
+                            <div class="project-overlay">
+                                <h3>3-axis CNC machining</h3>
+                                <p>
+                                    We used Fusion360 to CAM our projects.
+                                </p>
+
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="project-category">
+                    <h2 class="project-heading">hackClub - Blueprint</h2>
+                    <p class="project-description">
+                        The opportunity to design circuits and actually work with the board came from a hackClub. I learned to create custom-designed printed circuit boards from watching videos from Phil's Lab. I initially started designing circuits and PCBs using KiCad. I am now currently using Altium.
+                    </p>
+
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="assets/macropad_pcb.png" alt="Macropad PCB">
+                            <div class="project-overlay">
+                                <h3>Macropad</h3>
+                                <p>
+                                    This is a macropad that I made with HackClub. It includes a switch matrix with 12 mechanical keys,
+                                    an OLED display, and backlit RGB LEDs. The firmware was programmed
+                                    using QMK on a Raspberry Pi microcontroller.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="assets/raspberrypi_devboard_pcb.png" alt="Raspberry Pi PCB">
+                            <div class="project-overlay">
+                                <h3>Raspberry Pi Dev Board</h3>
+                                <p>
+                                    This is the second development board that I made. It is a compact Raspberry Pi development board with power regulation, clocks, and GPIO pins for prototyping.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="assets/hackclub_lora.jpg" alt="RF Board">
+                            <div class="project-overlay">
+                                <h3>RF Board</h3>
+                                <p>
+                                    Designed a 2.4GHz RF board integrating an STM32 microcontroller and wireless
+                                    transceiver. Focused on RF layout considerations, grounding, and an antenna
+                                    to ensure reliable communication.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-category">
+                    <h2 class="project-heading">Arduino & Embedded Systems</h2>
+                    <p class="project-description">
+                        Built embedded systems using Arduino and sensors, working with multiple communication protocols and real-time data from ultrasonic sensors, gyroscopes, and encoders. Below are some of the projects I have built in the past.
+                    </p>
+
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <img src="assets/robottour.png" alt="Autonomous Robot">
+                            <div class="project-overlay">
+                                <h3>Autonomous Robot</h3>
+                                <p>
+                                    Me and a friend built an autonomous robot designed for Science Olympiad. We initially used a kit and gradually added sensors to tailor our needs.
+                                    We used ultrasonic sensors for obstacle detection and a gyroscope to sense its surroundings and navigate
+                                    an obstacle course with 1 cm precision. I learned how to read specific data from sensors and use PID control to callibrate the desired potition of the robot. We earned 1st place in the 2025 states competition and several other ones.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="assets/brain_box.jpg" alt="HackCWRU">
+                            <div class="project-overlay">
+                                <h3>brain[box]</h3>
+                                <p>
+                                    For our school's hackathon, we built a device that encourages learning through a reward system. The program asks questions about a specific subject and gives you feedback for your answers. In the future, we would like to implement an AI model to expand the fixed-set of questions we have and tailor the questions to the student's needs. Overall, we won 4th place at our school's hackathon and also earned a scholarship from Rockwell Automation for innovative projects.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <img src="assets/piezoelectricsensor.png" alt="Knock Sensor">
+                            <div class="project-overlay">
+                                <h3>Knock Sensor</h3>
+                                <p>
+                                    I built a piezoelectric knock sensor for an intro-engineering course during my first year in college. This device that detects and interprets tap patterns
+                                    as coded input. This project taught me about signal conditioning and thresholding in Arduino (using MatLab) to reduce noise and false triggers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="education">
+    <div class="container section-row">
+        <div class="section-label">
+            <h1>/education</h1>
+        </div>
+
+        <div class="section-content">
+
+            <div class="education-card">
+                <h2>Case Western Reserve University</h2>
+                <p class="education-meta">2025 - present</p>
+                <p class="education-description">
+                    Pursuing a Bachelor of Science in Electrical Engineering. I am also minoring in Manufacturing and Mechanical Design. I am excited to deepen my knowledge in both hardware and software, and continue exploring the intersection of these fields through projects and research opportunities.
+                </p>
+                <p class="education-description">
+                    Relevant Coursework: Physics II, Calculus III, Differential Equations, Circuits and Instrumentation, Electromagnetic Fields
+                </p>
+            </div>
+
+            <div class="education-card">
+                <h2>Brooklyn Technical High School</h2>
+                <p class="education-meta">2021 – 2025</p>
+                <p class="education-description">
+                    Completed engineering-focused coursework in software development using Java, Python, HTML/CSS/JS, and SQL. Participated in National Honor Society, Mu Alpha Theta, and Science Olympiad, where I discovered my interest in designing and building.
+                </p>
+                <p class="education-description">
+                    Relevant Coursework: AP Calculus BC, AP Physics C: Mechanics, AP Statistics, PLTW Design and Drawing for Production, PLTW Digital Electronics
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="container footer-inner">
+            <p class="footer-left">created by Jason Wei</p>
+            <div class="footer-right">
+                <a class="footer-link linkedin" href="https://www.linkedin.com/in/wei-jason" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a class="footer-link github" href="https://github.com/jsn-w" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
