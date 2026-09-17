@@ -1,25 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Jetbrains Mono', monospace; */
+    /* font-family: 'Reddit Mono', monospace; */
     font-family: monospace;
 }
 
 
 /* colors */
 :root {
-    --black-main: #0c0e12;
-    --black-card: #161a22;
+    --black-main: #ccd8f0;
 
-    --orange-main: #ff9f43;
+    --orange-main: #439bff;
 
     --accent-blue: #5ecbff;
     --accent-purple: #c77dff;
 
-    --text-light: #eaeaf0;
+    --text-light: #043d55;
     --text-muted: #a1a6b3;
 }
 
@@ -35,16 +34,15 @@ body {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 25px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0b0e14;
+    background: #b2c6f0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3a3f4b;
-    border-radius: 10px;
+    background: #8eabee;
 }
 
 
@@ -53,7 +51,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(rgba(0, 0, 0, 1), rgba(12, 14, 18, 0));
     backdrop-filter: blur(3px);
 }
 
@@ -111,7 +108,7 @@ section {
     width: 160px;
     height: 160px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 30%;
     border: 4px solid var(--orange-main);
     background-color: var(--text-light);
 }
@@ -180,7 +177,6 @@ section {
     position: relative;
     border-radius: 20px;
     overflow: hidden;
-    background: var(--black-card);
     transition: transform 0.8s ease, box-shadow 0.8s ease;
 }
 
@@ -192,13 +188,13 @@ section {
 }
 
 .project-card:hover {
-    box-shadow: 0 0 10px rgba(255, 153, 0, 0.8);
+    box-shadow: 0 0 10px rgba(20, 33, 39, 0.8);
 }
 
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(12, 14, 18, 0.8);
+    background: rgba(156, 171, 202, 0.9);
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -225,7 +221,6 @@ section {
 
 /* education */
 .education-card {
-    background: var(--black-card);
     border-radius: 18px;
     padding: 30px;
     margin-bottom: 20px;
@@ -281,7 +276,7 @@ section {
     font-size: 14px;
     color: var(--text-light);
     text-decoration: none;
-    border: 1px solid #855223;
+    border: 1px solid #234e85;
 
     transition:
         box-shadow 0.5s ease,
@@ -295,7 +290,7 @@ section {
 
 /* hover */
 .footer-link:hover {
-    background: rgba(255, 159, 67, 0.15);
+    background: rgba(74, 162, 245, 0.322);
 }
 
 
